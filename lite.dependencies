@@ -1,0 +1,40 @@
+[
+  {
+    "repository": "kernel_xiaomi_msm8998",
+    "target_path": "kernel/xiaomi/msm8998",
+    "branch": "8.1"
+  },
+  {
+    "repository": "device_xiaomi_msm8998-common",
+    "target_path": "device/xiaomi/msm8998-common",
+    "branch": "8.1"
+  },
+  {
+    "repository": "vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "8.1"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio-caf/msm8998",
+    "branch": "lineage-15.1-caf-8998"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display-caf/msm8998",
+    "branch": "lineage-15.1-caf-8998"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_hardware_qcom_media",
+    "target_path": "hardware/qcom/media-caf/msm8998",
+    "branch": "lineage-15.1-caf-8998"
+  },
+  {
+    "repository": "vendor_codeaurora_telephony",
+    "target_path": "vendor/codeaurora/telephony",
+    "branch": "8.1"
+  }
+]
