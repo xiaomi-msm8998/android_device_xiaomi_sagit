@@ -1,13 +1,21 @@
 $(call inherit-product, device/xiaomi/sagit/full_sagit.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common LiteOS stuff.
+$(call inherit-product, vendor/lite/lite.mk)
 
-PRODUCT_NAME := lineage_sagit
+# SMS Messageing
+PRODUCT_PACKAGES += \
+    GMessaging
+
+ALLOW_MISSING_DEPENDENCIES=true
+
+PRODUCT_NAME := lite_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
+
+TARGET_VENDOR_PRODUCT_NAME := sagit
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
