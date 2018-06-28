@@ -36,5 +36,10 @@
     "repository": "vendor_codeaurora_telephony",
     "target_path": "vendor/codeaurora/telephony",
     "branch": "8.1"
+  },
+  {
+    "repository": "XiaomiCustom",
+    "target_path": "vendor/XiaomiCustom",
+    "branch": "8.1"
   }
 ]
