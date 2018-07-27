@@ -33,11 +33,6 @@
     "branch": "lineage-15.1-caf-8998"
   },
   {
-    "repository": "vendor_codeaurora_telephony",
-    "target_path": "vendor/codeaurora/telephony",
-    "branch": "8.1"
-  },
-  {
     "repository": "XiaomiCustom",
     "target_path": "vendor/XiaomiCustom",
     "branch": "8.1"
