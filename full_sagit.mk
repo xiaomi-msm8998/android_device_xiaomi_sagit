@@ -30,5 +30,5 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 PRODUCT_NAME := full_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI Mix 2
+PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi

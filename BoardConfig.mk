@@ -33,14 +33,8 @@ TARGET_KERNEL_CONFIG := sagit_defconfig
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sagit
 
-# Audio
-AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT := true
-
-# Manifest
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from proprietary files
 include vendor/xiaomi/sagit/BoardConfigVendor.mk
