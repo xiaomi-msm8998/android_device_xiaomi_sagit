@@ -31,6 +31,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 1080p
+TARGET_GAPPS_ARCH := arm64
+TARGET_DENSITY := xxhdpi
+IS_PHONE := true
+TARGET_INCLUDE_ARCORE := true
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -49,3 +53,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="sagit" \
     BUILD_FINGERPRINT="Xiaomi/sagit/sagit:8.0.0/OPR1.170623.027/V9.5.3.0.OCAMIFA:user/release-keys" \
     PRIVATE_BUILD_DESC="sagit-user 8.0.0 OPR1.170623.027 V9.5.3.0.OCAMIFA release-keys"
+
+TARGET_VENDOR := oneplus
