@@ -34,7 +34,7 @@ TARGET_BOOTANIMATION_SIZE := 1080p
 TARGET_GAPPS_ARCH := arm64
 TARGET_DENSITY := xxhdpi
 IS_PHONE := true
-TARGET_INCLUDE_ARCORE := true
+TARGET_INCLUDE_ARCORE := false
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
