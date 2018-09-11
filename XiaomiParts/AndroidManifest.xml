@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.custom.settings.device"
+    android:sharedUserId="android.uid.system" >
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="26" />
+    <application
+        android:label="@string/advanced_settings"
+        android:theme="@android:style/Theme.DeviceDefault.Settings"
+        android:supportsRtl="true" >
+        <activity
+            android:name="com.custom.settings.device.DeviceSettings"
+            android:exported="true"
+            android:enabled="true"
+            android:label="@string/advanced_settings"
+            android:icon="@drawable/ic_mi">
+                <intent-filter android:priority="-3" >
+                    <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+                <meta-data android:name="com.android.settings.category"
+                           android:value="com.android.settings.category.ia.system" />
+                <meta-data android:name="com.android.settings.summary"
+                           android:resource="@string/advanced_settings_summary"/>
+        </activity>
+
+        <receiver android:name=".Startup" >
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
