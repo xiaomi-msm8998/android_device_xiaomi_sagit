@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# call XiaomiCustom
+$(call inherit-produc-if-exists, vendor/XiaomiCustom/XiaomiCustom.mk)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
