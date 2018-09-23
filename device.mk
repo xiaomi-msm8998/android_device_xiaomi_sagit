@@ -17,6 +17,10 @@
 # call XiaomiCustom
 $(call inherit-produc-if-exists, vendor/XiaomiCustom/XiaomiCustom.mk)
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/PixelIIWhite.zip:system/media/bootanimation.zip
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
