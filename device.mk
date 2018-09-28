@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-custom
 
 # Inherit from msm8998-common
 $(call inherit-product, device/xiaomi/msm8998-common/msm8998.mk)
@@ -48,6 +48,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
+
+# Launcher
+PRODUCT_PACKAGES += \
+    NexusLauncher
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/launcher/etc/launcher-hiddenapi-package-whitelist.xml:system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
