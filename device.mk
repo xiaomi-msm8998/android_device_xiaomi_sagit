@@ -54,4 +54,5 @@ $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
 
 # Xiaomi Custom
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    GoogleCamera
