@@ -19,7 +19,7 @@ $(call inherit-produc-if-exists, vendor/XiaomiCustom/XiaomiCustom.mk)
 
 # Boot Animation
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/PixelIIWhite.zip:system/media/bootanimation.zip
+    $(LOCAL_PATH)/prebuilt/pixel2darkbootanimation_by_darkalex97_xda_v2.zip:system/media/bootanimation.zip
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
