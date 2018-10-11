@@ -21,6 +21,10 @@ $(call inherit-produc-if-exists, vendor/XiaomiCustom/XiaomiCustom.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/pixel2darkbootanimation_by_darkalex97_xda_v2.zip:system/media/bootanimation.zip
 
+# Pixel Live Wallpaper
+PRODUCT_PACKAGES += \
+    com.ustwo.lwp
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
