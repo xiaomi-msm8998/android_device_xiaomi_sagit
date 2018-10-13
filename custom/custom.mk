@@ -15,3 +15,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/launcher/etc/launcher-hiddenapi-package-whitelist.xml:system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml
+
+# OTA for AEX
+$(call inherit-product-if-exists, vendor/aosp/config/ota.mk)
