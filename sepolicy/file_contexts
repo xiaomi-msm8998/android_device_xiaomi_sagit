@@ -1,5 +1,2 @@
 # IR
 /dev/peel_ir                                                  u:object_r:ir_device:s0
-
-# Vibration Strength
-/sys/devices/virtual/timed_output/vibrator/vtg_level            u:object_r:sysfs_vibrator:s0

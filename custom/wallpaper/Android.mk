@@ -1,5 +1,5 @@
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.ustwo.lwp
+LOCAL_MODULE := com.ustwo.lwp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := com.ustwo.lwp.apk
 LOCAL_CERTIFICATE := PRESIGNED
