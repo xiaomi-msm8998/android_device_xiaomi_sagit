@@ -51,7 +51,6 @@ cp /s/vendor/lib64/hw/gatekeeper.msm8998.so /vendor/lib64/hw/
 cp /s/vendor/lib64/hw/keystore.msm8998.so /vendor/lib64/hw/
 
 cp /s/vendor/manifest.xml /vendor/
-cp /s/vendor/compatibility_matrix.xml /vendor/
 
 relink /s/vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 relink /s/vendor/bin/hw/android.hardware.keymaster@3.0-service
