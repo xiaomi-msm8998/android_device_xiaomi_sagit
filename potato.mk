@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_sagit
+PRODUCT_NAME := potato_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6

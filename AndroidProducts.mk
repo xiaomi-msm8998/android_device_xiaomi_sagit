@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_sagit.mk
+    $(LOCAL_DIR)/potato.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_sagit-user \
-    lineage_sagit-userdebug \
-    lineage_sagit-eng
+    potato_sagit-user \
+    potato_sagit-userdebug \
+    potato_sagit-eng
