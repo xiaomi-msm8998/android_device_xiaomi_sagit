@@ -23,6 +23,9 @@ function blob_fixup() {
     vendor/lib64/com.fingerprints.extension@1.0.so)
         patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
         ;;
+    vendor/lib64/hw/fingerprint.fpc.msm8998.so)
+        sed -i 's/\/persist\/misc\/calibration_image.pndat/\/vendor\/etc\/fp\/calibrationimage.pndat/g' "${2}"
+        ;;
     vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so)
         patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
         ;;
