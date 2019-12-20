@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Google Apps
+WITH_GMS := true
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
