@@ -92,4 +92,54 @@
          Otherwise, the device may fail to wake out of suspend reliably.
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+
+    <!-- For Factory Reset Protection -->
+    <string name="config_persistentDataPackageName">com.google.android.gms</string>
+
+    <!-- Sets the package names whose certificates should be used to
+         verify location providers are allowed to be loaded. -->
+    <string-array name="config_locationProviderPackageNames" translatable="false">
+        <item>com.google.android.gms</item>
+        <item>com.android.location.fused</item>
+    </string-array>
+
+    <!-- Sets the package name for location extra packages -->
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+         <item>com.google.android.gms.location.history</item>
+    </string-array>
+
+    <!-- Sets the Ephemeral Resolver [DO NOT TRANSLATE] -->
+    <string-array name="config_ephemeralResolverPackage" translatable="false">
+        <item>com.google.android.gms</item>
+    </string-array>
+
+    <!-- The package name of the default network recommendation app. -->
+    <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
+
+    <!-- Default service to enable with accessibility shortcut [DO NOT TRANSLATE] -->
+    <string name="config_defaultAccessibilityService" translatable="false">com.google.android.marvin.talkback/.TalkBackService</string>
+
+    <!-- Colon separated list of package names that should be granted Notification Listener access -->
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.restore:com.google.android.projection.gearhead</string>
+
+    <!-- Default autofill service to enable [DO NOT TRANSLATE] -->
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+
+    <!-- Flag indicating which package name can access DeviceConfig table [DO NOT TRANSLATE] -->
+    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
+
+    <!-- An array of packages for which notifications cannot be blocked. -->
+    <string-array name="config_nonBlockableNotificationPackages" translatable="false">
+        <item>com.google.android.setupwizard</item>
+        <item>com.google.android.apps.restore</item>
+    </string-array>
+
+    <!-- The package name for the default wellbeing application. [DO NOT TRANSLATE] -->
+    <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
+
+    <!-- Colon separated list of package names that should be granted DND access -->
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.apps.wellbeing</string>
+
+    <!-- The component to be the default supervisor profile owner [DO NOT TRANSLATE] -->
+    <string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
 </resources>
