@@ -143,13 +143,6 @@
     <!-- The component to be the default supervisor profile owner [DO NOT TRANSLATE] -->
     <string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
 
-
-    <!-- The package name for the system's app prediction service.
-         This service must be trusted, as it can be activated without explicit consent of the user.
-         Example: "com.android.intelligence/.AppPredictionService"
-    -->
-    <string name="config_defaultAppPredictionService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
-
     <!-- The package name for the system's augmented autofill service.
          This service must be trusted, as it can be activated without explicit consent of the user.
          If no service with the specified name exists on the device, augmented autofill wil be
