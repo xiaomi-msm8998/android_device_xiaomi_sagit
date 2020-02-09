@@ -36,3 +36,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from proprietary files
 include vendor/xiaomi/sagit/BoardConfigVendor.mk
+include vendor/miuicamera/common/BoardConfigVendor.mk
